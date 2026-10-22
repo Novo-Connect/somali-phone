@@ -6,7 +6,7 @@
 
 Validate and normalize Somali mobile numbers, and find out which operator and mobile money wallet they belong to.
 
-Works with PHP 8.1+, and comes with a validation rule and an Eloquent cast for Laravel 10 to 13.
+Works with PHP 8.2+, and comes with a validation rule and an Eloquent cast for Laravel 12 and 13.
 
 ## Installation
 

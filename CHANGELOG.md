@@ -18,6 +18,6 @@ First release.
 - `somali_phone` string validation rule.
 - `AsSomaliPhone` Eloquent cast.
 - Validation messages in English and Somali.
-- Support for Laravel 10, 11, 12 and 13.
+- Support for Laravel 12 and 13.
 
 [1.0.0]: https://github.com/Novo-Connect/somali-phone/releases/tag/v1.0.0
