@@ -1,0 +1,67 @@
+{
+    "name": "novo-connect/somali-phone",
+    "description": "Validate, normalize and identify Somali mobile numbers: operator, virtual network and mobile money wallet. Works in plain PHP, with optional Laravel integration.",
+    "keywords": ["somalia", "somaliland", "phone", "validation", "msisdn", "hormuud", "telesom", "golis", "evc plus", "zaad", "waafi", "laravel"],
+    "type": "library",
+    "homepage": "https://github.com/Novo-Connect/somali-phone",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zakaria Ibrahim",
+            "email": "sakariyeibrahim@gmail.com",
+            "homepage": "https://github.com/zakaria-ibr",
+            "role": "Author"
+        },
+        {
+            "name": "Novo Connect",
+            "email": "hello@novo.co.com",
+            "homepage": "https://novo.co.com",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "email": "hello@novo.co.com",
+        "issues": "https://github.com/Novo-Connect/somali-phone/issues",
+        "source": "https://github.com/Novo-Connect/somali-phone"
+    },
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13",
+        "orchestra/testbench": "^8.0|^9.0|^10.0|^11.0",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^10.5|^11.0|^12.0"
+    },
+    "suggest": {
+        "illuminate/support": "For the Laravel validation rule, string rule and Eloquent cast (^10.0|^11.0|^12.0|^13.0)."
+    },
+    "autoload": {
+        "psr-4": {
+            "NovoConnect\\SomaliPhone\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NovoConnect\\SomaliPhone\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NovoConnect\\SomaliPhone\\Laravel\\SomaliPhoneServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "analyse": "phpstan analyse",
+        "format": "pint",
+        "lint": "pint --test"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
